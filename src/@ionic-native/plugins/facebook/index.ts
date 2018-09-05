@@ -36,10 +36,10 @@ export interface FacebookLoginResponse {
  *
  * [![fb-getstarted-2](/img/docs/native/Facebook/2.png)](https://developers.facebook.com/apps/)
  *
- * Then type in the following command in your Terminal, where APP_ID and APP_NAME are the values from the Facebook Developer portal.
+ * Then type in the following command in your Terminal, where fb_app_id and fb_app_name are the values from the Facebook Developer portal.
  *
  * ```bash
- *  ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+ *  ionic cordova plugin add cordova-plugin-facebook4 --variable fb_app_id="123456789" --variable fb_app_name="myApplication"
  * ```
  *
  * After, you'll need to add the native platforms you'll be using to your app in the Facebook Developer portal under your app's Settings:
@@ -111,8 +111,8 @@ export interface FacebookLoginResponse {
   pluginRef: 'facebookConnectPlugin',
   repo: 'https://github.com/jeduan/cordova-plugin-facebook4',
   install:
-    'ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"',
-  installVariables: ['APP_ID', 'APP_NAME'],
+    'ionic cordova plugin add cordova-plugin-facebook4 --variable fb_app_id="123456789" --variable fb_app_name="myApplication"',
+  installVariables: ['fb_app_id', 'fb_app_name'],
   platforms: ['Android', 'iOS', 'Browser']
 })
 @Injectable()
